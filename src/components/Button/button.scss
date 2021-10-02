@@ -1,0 +1,18 @@
+@import "../../constants.scss";
+
+.Button {
+  background-color: $primary-color;
+  color: white;
+  outline: none;
+  border: none;
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #00c2b3;
+  }
+}
