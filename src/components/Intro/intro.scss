@@ -1,0 +1,82 @@
+@import "../../constants.scss";
+
+.Intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  // background-color: pink;
+  position: relative;
+  overflow: hidden;
+  // z-index: 5;
+  .container {
+    width: 80%;
+    max-width: 1250px;
+    padding: 0 64px;
+    display: flex;
+    align-items: center;
+    // background-color: green;
+
+    .left {
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      flex: 3;
+
+      h1,
+      span {
+        font-family: Lato;
+      }
+
+      span {
+        margin: 30px 0;
+        color: #828585;
+      }
+
+      button {
+        align-self: flex-start;
+      }
+    }
+
+    .right {
+      // background-color: blue;
+      flex: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .videoContainer {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+    }
+  }
+
+  .rect {
+    position: absolute;
+    background-color: $primary-color;
+  }
+
+  .rect1 {
+    top: -150px;
+    right: -200px;
+    height: 1200px;
+    width: 700px;
+    transform: rotate(55deg);
+  }
+
+  .rect2 {
+    // display: none;
+    top: -400px;
+    right: -600px;
+    height: 900px;
+    width: 900px;
+    // background-color: red;
+    // z-index: 3;
+    transform: rotate(140deg);
+  }
+}
