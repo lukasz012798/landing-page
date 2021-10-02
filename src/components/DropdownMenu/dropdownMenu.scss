@@ -1,0 +1,28 @@
+@import "../../constants.scss";
+
+.DropdownMenu {
+  position: fixed;
+  margin-top: 20px;
+
+  .item {
+    color: black;
+    background-color: #f8f8f8;
+    padding: 15px;
+    padding-right: 30px;
+    transition: 0.3s color;
+    border-bottom: 1px solid #e7e7e7;
+    font-family: Lato;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
