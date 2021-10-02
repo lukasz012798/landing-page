@@ -1,0 +1,28 @@
+.Banner {
+  margin-top: 30px;
+  width: calc(80% - 100px);
+  max-width: 1150px;
+  background-color: #440063;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  border-radius: 5px;
+  position: relative;
+
+  h1 {
+    z-index: 1;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 250px solid transparent;
+
+    border-top: 120px solid #9c016d;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+  }
+}
