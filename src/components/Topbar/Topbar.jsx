@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHandScissors,
@@ -9,6 +10,14 @@ import Button from "../Button/Button";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 
 export default function Topbar({ menu, setMenu }) {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.scrollY);
+    };
+  }, []);
+
   const handleDropdown = (index, isActive) => {
     const state = menu;
     if (isActive) {
@@ -23,7 +32,7 @@ export default function Topbar({ menu, setMenu }) {
   };
 
   return (
-    <div className="Topbar">
+    <div className={`Topbar ${offset > 10 ? "boxShadow" : ""}`}>
       <div className="container">
         <div className="logo">
           <FontAwesomeIcon icon={faHandScissors} size="3x" rotation={90} />
