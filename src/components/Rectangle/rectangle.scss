@@ -1,4 +1,36 @@
 .Rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  transition: 0.4s;
+  transform: translateX(100%);
+}
+
+.move0 {
+  transform: translateX(0%);
+}
+
+.move-100 {
+  transform: translateX(-100%);
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  10% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
