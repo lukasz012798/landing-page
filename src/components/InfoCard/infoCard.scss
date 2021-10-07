@@ -1,0 +1,69 @@
+.InfoCard {
+  width: 28%;
+  //   background-color: green;
+  box-shadow: 0px 7px 11px 1px rgba(0, 0, 0, 0.03);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 11px 1px rgba(0, 0, 0, 0.11);
+  }
+
+  .imgContainer {
+    height: 20vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .rectangle {
+      width: 120%;
+      height: 150px;
+      background-color: white;
+      z-index: 2;
+      position: absolute;
+      bottom: -110px;
+      //   left: 50px;
+      transform: rotate(-6deg);
+    }
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
+    h3,
+    span,
+    a {
+      font-family: Lato;
+    }
+
+    h3 {
+      color: #2e3333;
+    }
+
+    span {
+      color: #828585;
+    }
+
+    a {
+      color: #00ccbc;
+      text-decoration: none;
+
+      &:hover {
+        color: #03aa9c;
+      }
+    }
+  }
+}
