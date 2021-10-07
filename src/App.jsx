@@ -1,10 +1,21 @@
 import { useState } from "react";
+
 import "./app.scss";
+
+import Advantages from "./components/Advantages/Advantages";
 import Banner from "./components/Banner/Banner";
 import Cards from "./components/Cards/Cards";
+import FAQ from "./components/FAQ/FAQ";
+import Freepik from "./components/Freepik/Freepik";
+import H1 from "./components/H1/H1";
+import InfoCards from "./components/InfoCards/InfoCards";
 import Intro from "./components/Intro/Intro";
+import Links from "./components/Links/Links";
+import Logos from "./components/Logos/Logos";
 import Reviews from "./components/Reviews/Reviews";
+import Span from "./components/Span/Span";
 import Stats from "./components/Stats/Stats";
+import Steps from "./components/Steps/Steps";
 import Topbar from "./components/Topbar/Topbar";
 
 function App() {
@@ -44,24 +55,31 @@ function App() {
     <div className="App" onClick={closeMenu}>
       <Topbar menu={menu} setMenu={setMenu} />
       <Intro />
-      <h1>Why partner with Deliveroo?</h1>
+      <H1>Why partner with Deliveroo?</H1>
       <Cards />
-      <Banner />
+      <Banner buttonTxt="Vote now" triangleColor="9c016d">
+        Crown the winners of the Restaurant Awards 2021
+      </Banner>
       <Stats />
-      <hr />
-      <h1>Join the UK's favourite delivery partner</h1>
-      <span>Trusted by restaurants and takeaways all over the world</span>
+      <H1>Join the UK's favourite delivery partner</H1>
+      <Span>Trusted by restaurants and takeaways all over the world</Span>
       <Reviews />
-      <div>
-        Icons made by{" "}
-        <a href="https://www.freepik.com" title="Freepik">
-          Freepik
-        </a>{" "}
-        from{" "}
-        <a href="https://www.flaticon.com/" title="Flaticon">
-          www.flaticon.com
-        </a>
-      </div>
+      <Logos />
+      <H1>Choose products and pricing to suit your needs</H1>
+      <Advantages />
+      <H1>How does Deliveroo work?</H1>
+      <Span>Fire up your kitchen for Deliveroo orders in a few easy steps</Span>
+      <Steps />
+      <Banner buttonTxt="Sign up" triangleColor="00ccbc">
+        Become a Deliveroo partner today
+      </Banner>
+      <H1>Grow and support your business</H1>
+      <Span>Products, services and information for your success</Span>
+      <InfoCards />
+      <H1>Frequently asked questions</H1>
+      <FAQ />
+      <Links />
+      <Freepik />
     </div>
   );
 }
