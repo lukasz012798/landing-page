@@ -1,0 +1,47 @@
+@import "../../constants.scss";
+
+.Links {
+  width: 75%;
+  max-width: 1200px;
+  // background-color: tomato;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  div {
+    flex: 2;
+
+    h3 {
+      font-family: Lato;
+      font-size: 14px;
+      color: #2e3333;
+      padding-bottom: 20px;
+    }
+
+    li,
+    p {
+      color: #828585;
+      font-family: Lato;
+      font-size: 14px;
+      padding: 5px 0;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 0;
+
+      li {
+        cursor: pointer;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    &:last-of-type {
+      flex: 5;
+    }
+  }
+}
