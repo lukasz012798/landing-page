@@ -1,12 +1,15 @@
 import Button from "../Button/Button";
 import "./banner.scss";
 
-export default function Banner() {
+export default function Banner({ children, buttonTxt, triangleColor }) {
   return (
     <div className="Banner">
-      <h1>Crown the winners of the Restaurant Awards 2021</h1>
-      <Button title={"Vote now"} />
-      <div className="triangle"></div>
+      <h1>{children}</h1>
+      <Button title={buttonTxt} />
+      <div
+        className="triangle"
+        style={{ borderTop: `120px solid #${triangleColor}` }}
+      ></div>
     </div>
   );
 }
