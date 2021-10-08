@@ -2,6 +2,11 @@
 
 .Advantages {
   margin-bottom: 70px;
+
+  @include small {
+    padding: 0 30px;
+  }
+
   h3 {
     margin: 40px auto 20px;
     font-family: Lato;
@@ -14,10 +19,9 @@
   }
 
   ul {
-    // background-color: green;
     padding: 0;
+
     li {
-      //   background-color: red;
       color: $lightgray;
       font-family: Lato;
       margin-top: 10px;

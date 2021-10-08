@@ -7,6 +7,10 @@
   display: flex;
   color: $lightgray;
 
+  @include small {
+    width: 90%;
+  }
+
   .left {
     flex: 1;
     display: flex;
@@ -20,6 +24,10 @@
 
       .empty {
         flex: 1;
+
+        @include small {
+          display: none;
+        }
       }
 
       .name {
@@ -33,6 +41,10 @@
 
       .empty2 {
         flex: 6;
+
+        @include small {
+          flex: 2;
+        }
       }
     }
 
@@ -44,6 +56,10 @@
         font-size: 80px;
         color: $primary-color;
         text-align: center;
+
+        @include small {
+          display: none;
+        }
       }
 
       .review {
@@ -53,6 +69,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include small {
+          // flex: 5;
+          font-size: 14px;
+        }
       }
     }
   }

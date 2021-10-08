@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .Logos {
   width: 90%;
   max-width: 1250px;
@@ -8,4 +10,8 @@
   padding: 50px 0 70px 0;
   border-bottom: 1px solid #d8d8d8;
   margin-bottom: 50px;
+
+  @include small {
+    flex-wrap: wrap;
+  }
 }

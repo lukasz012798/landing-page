@@ -17,6 +17,11 @@
     max-width: 1250px;
     justify-content: space-between;
     padding: 0 64px;
+    flex-wrap: wrap;
+
+    @include small {
+      justify-content: center;
+    }
 
     .logo {
       font-family: Lato;
@@ -25,6 +30,12 @@
       font-size: 24px;
       display: flex;
       align-items: center;
+      justify-content: center;
+
+      @include small {
+        width: 100%;
+        // background-color: red;
+      }
     }
 
     .menu {
